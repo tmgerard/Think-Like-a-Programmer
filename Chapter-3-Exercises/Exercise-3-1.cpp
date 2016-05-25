@@ -1,4 +1,6 @@
 /*
+*   Exercise 3-1
+*
 *   Are you disappointed we didn't do more with sorting? I'm here to help.
 *   To make sure you are comfortable with qsort, write code that uses the
 *   function to sort an array of our student struct. First have it sort by
