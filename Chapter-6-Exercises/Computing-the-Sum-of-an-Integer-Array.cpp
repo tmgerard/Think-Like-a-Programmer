@@ -16,8 +16,8 @@ int arraySumRecursive(int integers[], int size);
 
 int main()
 {
-    int size = 4;
-    int numbers[size] = {1, 2, 3, 4};
+    int size = 10;
+    int numbers[size] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     std::cout << "Iterative Approach" << std::endl;
     std::cout << "sum = " << iterativeArraySum(numbers, size) << std::endl << std::endl;
