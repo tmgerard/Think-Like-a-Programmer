@@ -1,5 +1,5 @@
-#ifndef STUDENTRECORD_H
-#define STUDENTRECORD_H
+#ifndef STUDENTRECORD2_H
+#define STUDENTRECORD2_H
 
 #include<string>
 
@@ -22,4 +22,4 @@ private:
     std::string _name;
 };
 
-#endif // STUDENTRECORD_H
+#endif // STUDENTRECORD2_H

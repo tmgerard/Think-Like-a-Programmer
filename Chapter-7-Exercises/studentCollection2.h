@@ -1,13 +1,14 @@
-#ifndef STUDENTCOLLECTION_H
-#define STUDENTCOLLECTION_H
+#ifndef STUDENTCOLLECTION2_H
+#define STUDENTCOLLECTION2_H
 
-#include "studentRecord.h"
+#include "../Chapter-7-Exercises/studentRecord2.h"
 
 typedef bool (* firstStudentPolicy)(studentRecord r1, studentRecord r2);
 
 bool higherGrade(studentRecord r1, studentRecord r2);
 bool lowerStudentNumber(studentRecord r1, studentRecord r2);
 bool nameComesFirst(studentRecord r1, studentRecord r2);
+
 
 class studentCollection
 {
@@ -37,4 +38,4 @@ private:
 
 
 
-#endif // STUDENTCOLLECTION_H
+#endif // STUDENTCOLLECTION2_H
