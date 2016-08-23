@@ -1,6 +1,6 @@
 #include <string.h>
-#include "../Chapter-7-Exercises/studentCollection2.h"
-#include "../Chapter-7-Exercises/studentRecord2.h"
+#include "studentCollection.h"
+#include "studentRecord.h"
 
 bool higherGrade(studentRecord r1, studentRecord r2)
 {

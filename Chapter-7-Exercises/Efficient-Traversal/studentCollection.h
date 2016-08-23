@@ -1,14 +1,14 @@
-#ifndef STUDENTCOLLECTION2_H
-#define STUDENTCOLLECTION2_H
+#ifndef STUDENTCOLLECTION_H
+#define STUDENTCOLLECTION_H
 
-#include "../Chapter-7-Exercises/studentRecord2.h"
+#include "studentRecord.h"
+#include "scIterator.h"
 
 typedef bool (* firstStudentPolicy)(studentRecord r1, studentRecord r2);
 
 bool higherGrade(studentRecord r1, studentRecord r2);
 bool lowerStudentNumber(studentRecord r1, studentRecord r2);
 bool nameComesFirst(studentRecord r1, studentRecord r2);
-
 
 class studentCollection
 {
@@ -28,6 +28,8 @@ public:
     void removeRecord(int idNum);
     void setFirstStudentPolicy(firstStudentPolicy f);
     studentRecord firstStudent();
+    friend class scIterator;
+    scIterator firstItemIterator();
 private:
     firstStudentPolicy _currentPolicy;
     typedef studentNode* studentList;
@@ -38,4 +40,4 @@ private:
 
 
 
-#endif // STUDENTCOLLECTION2_H
+#endif // STUDENTCOLLECTION_H

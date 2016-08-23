@@ -16,8 +16,8 @@
 
 #include <iostream>
 #include <string.h>
-#include "studentCollection2.h"
-#include "studentRecord2.h"
+#include "studentCollection.h"
+#include "studentRecord.h"
 
 int main()
 {

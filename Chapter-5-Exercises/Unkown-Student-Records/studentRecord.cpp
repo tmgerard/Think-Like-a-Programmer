@@ -1,5 +1,5 @@
 #include <string>
-#include "studentRecord2.h"
+#include "studentRecord.h"
 
 studentRecord::studentRecord()
 {

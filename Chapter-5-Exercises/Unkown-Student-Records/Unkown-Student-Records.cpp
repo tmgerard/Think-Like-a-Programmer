@@ -21,9 +21,26 @@
 
 #include <iostream>
 #include "studentRecord.h"
-#include "studentRecord.h"
+#include "studentCollection.h"
 
 int main()
 {
+    studentCollection s;
 
+    studentRecord stu3(84, 1152, "Sue");
+    studentRecord stu2(75, 4875, "Ed");
+    studentRecord stu1(98, 2938, "Todd");
+
+    s.addRecord(stu3);
+    s.addRecord(stu2);
+    s.addRecord(stu1);
+
+    std::cout << "Student 2: " << s.recordWithNumber(4875).name() << " " << std::endl;
+    std::cout << "Removing student 2" << std::endl;
+
+    s.removeRecord(4875);
+
+    std::cout << "Student 2: " << s.recordWithNumber(4875).name() << " " << std::endl;
+
+    return 0;
 }

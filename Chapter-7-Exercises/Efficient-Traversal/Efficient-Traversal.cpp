@@ -9,9 +9,9 @@
 
 #include <iostream>
 #include <string.h>
-#include "../Chapter-7-Exercises/studentCollection2.h"
-#include "../Chapter-7-Exercises/studentRecord2.h"
-#include "../Chapter-7-Exercises/scIterator.h"
+#include "studentCollection.h"
+#include "studentRecord.h"
+#include "scIterator.h"
 
 int main()
 {

@@ -1,6 +1,6 @@
-#include "../Chapter-7-Exercises/scIterator.h"
-#include "../Chapter-7-Exercises/studentCollection2.h"
-#include "../Chapter-7-Exercises/studentRecord2.h"
+#include "scIterator.h"
+#include "studentCollection.h"
+#include "studentRecord.h"
 
 scIterator::scIterator()
 {
@@ -9,6 +9,11 @@ scIterator::scIterator()
 scIterator::scIterator(studentCollection::studentNode* initial)
 {
     current = initial;
+}
+
+scIterator studentCollection::firstItemIterator()
+{
+    return scIterator(_listHead);
 }
 
 void scIterator::advance()
