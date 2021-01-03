@@ -32,7 +32,7 @@ int main()
             std::cout << '#';
         }
 
-        for (int space = 1; space <= 14 - 2 * ((row - 1) + row); space++)
+        for (int space = 1; space <= 16 - (row * 4) ; space++)
         {
             std::cout << ' ';
         }
@@ -57,7 +57,7 @@ int main()
             std::cout << '#';
         }
 
-        for (int space = 1; space <=  14 - 2 * ((4 - row) + (5 - row)); space++)
+        for (int space = 1; space <= (row - 1) * 4; space++)
         {
             std::cout << ' ';
         }
